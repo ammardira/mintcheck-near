@@ -1,0 +1,11 @@
+node_modules/
+contract/build/
+.near/
+keys/
+*.log
+.env
+
+# local-only working files
+demo/
+X_POST_DRAFT.md
+SUBMISSION.local.md

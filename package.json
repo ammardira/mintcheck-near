@@ -1,0 +1,21 @@
+{
+  "name": "mintcheck-near",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MintCheck: a scam-detection agent for the agent economy. Vets crypto mint projects from verifiable on-chain data and anchors its verdicts in a NEAR testnet registry contract.",
+  "type": "module",
+  "scripts": {
+    "build-contract": "cd contract && node_modules/.bin/near-sdk-js build src/contract.js build/verdict-registry.wasm",
+    "demo": "node agent/mintcheck.js --sample samples/pokechain.json",
+    "vet": "node agent/mintcheck.js"
+  },
+  "dependencies": {
+    "@near-js/accounts": "^2.5.1",
+    "@near-js/crypto": "^2.5.1",
+    "@near-js/providers": "^2.5.1",
+    "@near-js/signers": "^2.5.1"
+  },
+  "devDependencies": {
+    "near-cli": "^4.0.13"
+  }
+}
